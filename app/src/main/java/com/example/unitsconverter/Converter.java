@@ -21,9 +21,17 @@ public class Converter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_converter);
-        messageText = (TextView) findViewById(R.id.message);
-        String message =getIntent().getExtras().getString("radioChosen");
-        messageText.setText(message);
+        Intent intent = getIntent();
+        String selectedRadioValue = intent.getStringExtra("selectedRadioValue");
+        //String checked = intent.getStringExtra("checked");
+        messageText = (TextView) findViewById(R.id.messageChange);
+        messageText.setText(selectedRadioValue);
+        //messageText.setText(checked);
+
+
+        //messageText = (TextView) findViewById(R.id.message);
+        //String message =getIntent().getExtras().getString("radioChosen");
+        //messageText.setText(message);
 
         gobackButton = (Button) findViewById(R.id.gobackButton);
         gobackButton.setOnClickListener(new View.OnClickListener() {
