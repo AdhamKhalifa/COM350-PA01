@@ -12,14 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="#57A773"
-        android:text="@string/launch_converter"
+        android:text="Launch Converter"
         android:textColor="@color/white"
+        android:backgroundTint="#57A773"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -36,48 +35,36 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/kilogram_kg_to_pounds_lb"
             android:textColor="@color/white"
-            tools:ignore="TextContrastCheck" />
+            android:text="@string/kilogram_kg_to_pounds_lb" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pounds_lb_to_kilograms_kg"
             android:textColor="@color/white"
-            tools:ignore="TextContrastCheck" />
+            android:text="@string/pounds_lb_to_kilograms_kg" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/kilometers_km_to_miles_mi"
             android:textColor="@color/white"
-            tools:ignore="TextContrastCheck" />
+            android:text="@string/kilometers_km_to_miles_mi" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/miles_mi_to_kilometers_km"
             android:textColor="@color/white"
-            tools:ignore="TextContrastCheck" />
+            android:text="@string/miles_mi_to_kilometers_km" />
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="81dp"
-        android:text="@string/welcome"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="TextContrastCheck" />
-
+        android:text="TextView"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="167dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
