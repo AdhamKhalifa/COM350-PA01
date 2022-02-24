@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="104dp"
-        android:text="@string/welcome"
+        android:text="@string/welcome_you_can_convert_units_in_one_click"
         android:textColor="#FFFFFF"
         android:textColorLink="#F6F0F0"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"

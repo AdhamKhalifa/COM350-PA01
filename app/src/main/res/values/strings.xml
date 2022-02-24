@@ -9,4 +9,6 @@
     <string name="textview">TextView</string>
     <string name="launch_converter">Launch Converter</string>
     <string name="welcome">Welcome!</string>
+    <string name="you_can_convert_units_in_one_click">You can convert units in one click.</string>
+    <string name="welcome_you_can_convert_units_in_one_click">Welcome! You can convert units in one click.</string>
 </resources>
