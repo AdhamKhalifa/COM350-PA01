@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UnitsConverter">
         <activity
+            android:name=".Converter"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
