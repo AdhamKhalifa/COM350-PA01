@@ -15,6 +15,8 @@ import android.os.Bundle;
 
 public class Converter extends AppCompatActivity {
     TextView messageText;
+    private Button gobackButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,20 @@ public class Converter extends AppCompatActivity {
         messageText = (TextView) findViewById(R.id.message);
         String message =getIntent().getExtras().getString("radioChosen");
         messageText.setText(message);
+
+        gobackButton = (Button) findViewById(R.id.gobackButton);
+        gobackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                backtoMainActivity();
+            }
+        });
+
+    }
+
+    public void backtoMainActivity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
     }
 }
