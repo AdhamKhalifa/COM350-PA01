@@ -6,4 +6,6 @@
     <string name="pounds_lb_to_kilograms_kg">Pounds(lb) to Kilograms(Kg)</string>
     <string name="kilometers_km_to_miles_mi">Kilometers(Km) to Miles(mi)</string>
     <string name="miles_mi_to_kilometers_km">Miles(mi) to Kilometers(Km)</string>
+    <string name="textview">TextView</string>
+    <string name="launch_converter">Launch Converter</string>
 </resources>
