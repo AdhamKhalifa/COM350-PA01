@@ -2,4 +2,8 @@
     <string name="app_name">UnitsConverter</string>
     <string name="textview">TextView</string>
     <string name="test">Test</string>
+    <string name="kilogram_kg_to_pounds_lb">Kilogram(Kg) to Pounds (lb)</string>
+    <string name="pounds_lb_to_kilograms_kg">Pounds(lb) to Kilograms(Kg)</string>
+    <string name="kilometers_km_to_miles_mi">Kilometers(Km) to Miles(mi)</string>
+    <string name="miles_mi_to_kilometers_km">Miles(mi) to Kilometers(Km)</string>
 </resources>

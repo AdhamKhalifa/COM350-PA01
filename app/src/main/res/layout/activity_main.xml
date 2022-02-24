@@ -10,12 +10,43 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/test"
+        android:text="Launch Converter"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="264dp"
+        android:layout_height="192dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.459">
 
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram_kg_to_pounds_lb" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pounds_lb_to_kilograms_kg" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kilometers_km_to_miles_mi" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/miles_mi_to_kilometers_km" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
