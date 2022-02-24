@@ -7,6 +7,14 @@
     tools:context=".MainActivity"
     android:background="#03A9F4">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Converter"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="667dp" />
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="264dp"
@@ -42,17 +50,4 @@
             android:layout_height="wrap_content"
             android:text="@string/miles_mi_to_kilometers_km" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="264dp"
-        android:layout_height="87dp"
-        android:text="@string/welcome_to_unit_converter_you_can_easily_convert_different_units_to_others_in_one_click"
-        android:textColor="#263238"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
 </androidx.constraintlayout.widget.ConstraintLayout>
