@@ -6,4 +6,6 @@
     <string name="pounds_lb_to_kilograms_kg">Pounds(lb) to Kilograms(Kg)</string>
     <string name="kilometers_km_to_miles_mi">Kilometers(Km) to Miles(mi)</string>
     <string name="miles_mi_to_kilometers_km">Miles(mi) to Kilometers(Km)</string>
+    <string name="launch_converter">Launch Converter</string>
+    <string name="welcome_to_unit_converter_you_can_easily_convert_different_units_to_others_in_one_click">Welcome to Unit Converter! You can easily convert different units to others in one click</string>
 </resources>
