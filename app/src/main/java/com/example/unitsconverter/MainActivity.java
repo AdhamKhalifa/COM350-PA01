@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+    //
 
     public void clickedButton(View view) {
         Intent intent = new Intent(this, Converter.class);
