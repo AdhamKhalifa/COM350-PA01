@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Converter">
+    tools:context=".Converter"
+    android:background="#79ADDC">
 
     <TextView
         android:id="@+id/textView2"
@@ -15,6 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
 
@@ -22,6 +24,7 @@
         android:id="@+id/messageChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="@string/textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +41,7 @@
         android:ems="10"
         android:hint="@string/enter_a_measurement_in_kilograms_kg"
         android:inputType="textPersonName"
-        android:textColorHint="#757575"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/convertButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
@@ -48,6 +51,7 @@
 
     <Button
         android:id="@+id/convertButton"
+        android:backgroundTint="#57A773"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/convert"
@@ -68,12 +72,14 @@
         app:layout_constraintHorizontal_bias="0.336"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/convertButton"
+        android:textColor="@color/white"
         app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/outputTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="@string/pounds_lb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,6 +90,7 @@
 
     <Button
         android:id="@+id/gobackButton"
+        android:backgroundTint="#57A773"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back"
