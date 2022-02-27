@@ -17,24 +17,37 @@ import android.os.Bundle;
 public class Converter extends AppCompatActivity {
     TextView messageText;
     private Button gobackButton;
+    Intent myIntent = getIntent();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_converter);
         Intent intent = getIntent();
-        String selectedRadioValue = intent.getStringExtra("selectedRadioValue");
-        //String checked = intent.getStringExtra("checked");
-        messageText = (TextView) findViewById(R.id.messageChange);
-        messageText.setText(selectedRadioValue);
-        //messageText.setText(checked);
+        EditText measurments = (EditText) findViewById(R.id.measurementEnter);
+        TextView measureText = (TextView) findViewById(R.id.messageChange);
+        int intValue = intent.getIntExtra("chosenButton", 0);
+        if (intValue == 1){
+            measureText.setText("kilograms(kg) to pounds(lb)");
+            measurments.setHint("Enter a measurement in kilograms(kg)");
+        }
+        if (intValue == 2){
+            measureText.setText("pounds(lb) to kilograms(kg)");
+            measurments.setHint("Enter a measurement in pounds(lb)");
+        }
+        if (intValue == 3){
+            measureText.setText("kilometers(km) to miles(mi)");
+            measurments.setHint("Enter a measurement in kilometers(km)");
+        }
+        if (intValue == 4){
+            measureText.setText("miles(mi) to kilometers(km)");
+            measurments.setHint("Enter a measurement in miles(mi)");
+        }
 
 
-        //messageText = (TextView) findViewById(R.id.message);
-        //String message =getIntent().getExtras().getString("radioChosen");
-        //messageText.setText(message);
-        EditText measurementInput = (EditText) findViewById(R.id.measurement);
-        String measurementValue = measurementInput.getText().toString();
+
+
         gobackButton = (Button) findViewById(R.id.gobackButton);
         gobackButton.setOnClickListener(new View.OnClickListener() {
             @Override
