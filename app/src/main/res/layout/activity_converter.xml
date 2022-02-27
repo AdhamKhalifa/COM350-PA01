@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <EditText
-        android:id="@+id/message"
+        android:id="@+id/measurement"
         android:layout_width="361dp"
         android:layout_height="48dp"
         android:autofillHints=""
@@ -86,7 +86,8 @@
         android:id="@+id/gobackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/back"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
