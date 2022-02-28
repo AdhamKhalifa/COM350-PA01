@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public int choice2 = 2;
     public int choice3 = 3;
     public int choice4 = 4;
+    public int choice5 = 5;
 
 
     @Override
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
                         //i.putExtra("fourthButton", choice4);
                         choice = 4;
                         break;
+                    case R.id.radioButton5://Radio button id
+                        //i.putExtra("fourthButton", choice4);
+                        choice = 5;
+                        break;
                 }
             }
         });
@@ -64,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("chosenButton", choice3);
             }if (choice == 4) {
                 i.putExtra("chosenButton", choice4);
+            }if (choice == 5) {
+                i.putExtra("chosenButton", choice5);
             }
             startActivity(i);
     }

@@ -24,8 +24,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="264dp"
-        android:layout_height="192dp"
+        android:layout_width="260dp"
+        android:layout_height="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -64,6 +64,14 @@
             android:text="@string/miles_mi_to_kilometers_km"
             android:textColor="@color/white"
             tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit_f_to_celsius_c"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
     </RadioGroup>
 
     <TextView
@@ -79,4 +87,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

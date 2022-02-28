@@ -18,4 +18,6 @@
     <string name="output">Output:</string>
     <string name="pounds_lb">Pounds(lb)</string>
     <string name="back">Back</string>
+    <string name="Result">TextView</string>
+    <string name="fahrenheit_f_to_celsius_c">Fahrenheit(F) to Celsius(C)</string>
 </resources>
