@@ -27,6 +27,7 @@ public class Converter extends AppCompatActivity {
 
         TextView newView = (TextView) findViewById(R.id.ResultTextView);
         TextView ResultUnit = (TextView) findViewById(R.id.ResultUnitTextView);
+        TextView ErrorTextView = (TextView) findViewById(R.id.errorTextView);
         int intValue = intent.getIntExtra("chosenButton", 0);
         if (intValue == 1){
             measureText.setText("kilograms(kg) to pounds(lb)");
@@ -40,6 +41,9 @@ public class Converter extends AppCompatActivity {
                     Double numVal = Double.parseDouble(value);
                     numVal = numVal * 2.20462;
                     value = String.valueOf(numVal);
+                    if (newInput.length() == 0) {
+                        ErrorTextView.setText("Please enter a value!");
+                    }
                     newView.setText(value);
                 }
             });
@@ -56,6 +60,9 @@ public class Converter extends AppCompatActivity {
                     Double numVal = Double.parseDouble(value);
                     numVal = numVal * 0.453592;
                     value = String.valueOf(numVal);
+                    if (newInput.getText().toString() == "") {
+                        ErrorTextView.setText("Please enter a value!");
+                    }
                     newView.setText(value);
                 }
             });
@@ -72,6 +79,9 @@ public class Converter extends AppCompatActivity {
                     Double numVal = Double.parseDouble(value);
                     numVal = numVal * 0.621371;
                     value = String.valueOf(numVal);
+                    if (newInput.getText().toString() == "") {
+                        ErrorTextView.setText("Please enter a value!");
+                    }
                     newView.setText(value);
                 }
             });
@@ -88,6 +98,9 @@ public class Converter extends AppCompatActivity {
                     Double numVal = Double.parseDouble(value);
                     numVal = numVal * 1.60934;
                     value = String.valueOf(numVal);
+                    if (newInput.getText().toString() == "") {
+                        ErrorTextView.setText("Please enter a value!");
+                    }
                     newView.setText(value);
                 }
             });
@@ -104,13 +117,13 @@ public class Converter extends AppCompatActivity {
                     Double numVal = Double.parseDouble(value);
                     numVal = ((numVal - 32) * 5)/9;
                     value = String.valueOf(numVal);
+                    if (newInput.getText().toString() == "") {
+                        ErrorTextView.setText("Please enter a value!");
+                    }
                     newView.setText(value);
                 }
             });
         }
-
-
-
 
         gobackButton = findViewById(R.id.gobackButton);
         gobackButton.setOnClickListener(new View.OnClickListener() {
