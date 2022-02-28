@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 
+//Created by Alexia Balentine and Adham Khalifa
+//Programming Assignment one
 public class MainActivity extends AppCompatActivity {
 
     RadioGroup radioGroupChoice;

@@ -4,16 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.text.Editable;
-import android.util.Log;
 import android.widget.TextView;
-
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import org.w3c.dom.Text;
 
 public class Converter extends AppCompatActivity {
     private Button gobackButton;
