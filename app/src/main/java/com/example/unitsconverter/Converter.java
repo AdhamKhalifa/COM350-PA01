@@ -13,7 +13,6 @@ import android.widget.EditText;
 public class Converter extends AppCompatActivity {
     private Button gobackButton;
 
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

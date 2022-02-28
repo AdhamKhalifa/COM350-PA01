@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 //Created by Alexia Balentine and Adham Khalifa
 //Programming Assignment one
@@ -16,18 +17,21 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroupChoice;
     Button send;
     public Intent i;
-    public int choice;
+    public int choice = 0;
     public int choice1 = 1;
     public int choice2 = 2;
     public int choice3 = 3;
     public int choice4 = 4;
     public int choice5 = 5;
+    public TextView problem;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        problem = (TextView) findViewById(R.id.ohno);
         send = (Button) findViewById(R.id.button);
         radioGroupChoice = (RadioGroup) findViewById(R.id.radioGroup);
         i = new Intent(MainActivity.this,Converter.class);
@@ -65,16 +69,22 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             if (choice == 1) {
                 i.putExtra("chosenButton", choice1);
+                startActivity(i);
             }if (choice == 2) {
                 i.putExtra("chosenButton", choice2);
+                startActivity(i);
             }if (choice == 3) {
                 i.putExtra("chosenButton", choice3);
+                startActivity(i);
             }if (choice == 4) {
                 i.putExtra("chosenButton", choice4);
+                startActivity(i);
             }if (choice == 5) {
                 i.putExtra("chosenButton", choice5);
+                startActivity(i);
+            }if (choice == 0){
+                problem.setText("Please choose what you want to convert.");
             }
-            startActivity(i);
     }
 }
 
