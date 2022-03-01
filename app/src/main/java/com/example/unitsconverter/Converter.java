@@ -22,12 +22,11 @@ public class Converter extends AppCompatActivity {
         EditText measurements = findViewById(R.id.inputNumber);
         TextView measureText = findViewById(R.id.messageChange);
         //EditText inputNumberVal = findViewById(R.id.inputNumber);
-        EditText newInput = (EditText) findViewById(R.id.inputNumber);
-        String value = newInput.getText().toString();
+        EditText newInput =findViewById(R.id.inputNumber);
 
-        TextView newView = (TextView) findViewById(R.id.ResultTextView);
-        TextView ResultUnit = (TextView) findViewById(R.id.ResultUnitTextView);
-        TextView ErrorTextView = (TextView) findViewById(R.id.errorTextView);
+        TextView newView =findViewById(R.id.ResultTextView);
+        TextView ResultUnit =findViewById(R.id.ResultUnitTextView);
+        TextView ErrorTextView =findViewById(R.id.errorTextView);
         int intValue = intent.getIntExtra("chosenButton", 0);
         if (intValue == 1){
             measureText.setText("kilograms(kg) to pounds(lb)");
@@ -37,14 +36,15 @@ public class Converter extends AppCompatActivity {
             converterBtn.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    String value = newInput.getText().toString();
-                    Double numVal = Double.parseDouble(value);
-                    numVal = numVal * 2.20462;
-                    value = String.valueOf(numVal);
-                    if (newInput.length() == 0) {
-                        ErrorTextView.setText("Please enter a value!");
+                    try{
+                        String value = newInput.getText().toString();
+                        Double numVal = Double.parseDouble(value);
+                        numVal = numVal * 2.20462;
+                        value = String.valueOf(numVal);
+                        newView.setText(value);
+                    } catch(Exception e){
+                        ErrorTextView.setText("This does not work sorry! Please enter an integer.");
                     }
-                    newView.setText(value);
                 }
             });
         }
@@ -55,15 +55,15 @@ public class Converter extends AppCompatActivity {
             Button converterBtn = findViewById(R.id.convertButton);
             converterBtn.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    // Do something in response to button click
-                    String value = newInput.getText().toString();
-                    Double numVal = Double.parseDouble(value);
-                    numVal = numVal * 0.453592;
-                    value = String.valueOf(numVal);
-                    if (newInput.getText().toString() == "") {
-                        ErrorTextView.setText("Please enter a value!");
+                    try {
+                        String value = newInput.getText().toString();
+                        Double numVal = Double.parseDouble(value);
+                        numVal = numVal * 0.453592;
+                        value = String.valueOf(numVal);
+                        newView.setText(value);
+                    } catch(Exception e){
+                        ErrorTextView.setText("This does not work sorry! Please enter an integer.");
                     }
-                    newView.setText(value);
                 }
             });
         }
@@ -75,14 +75,15 @@ public class Converter extends AppCompatActivity {
             converterBtn.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    String value = newInput.getText().toString();
-                    Double numVal = Double.parseDouble(value);
-                    numVal = numVal * 0.621371;
-                    value = String.valueOf(numVal);
-                    if (newInput.getText().toString() == "") {
-                        ErrorTextView.setText("Please enter a value!");
+                    try {
+                        String value = newInput.getText().toString();
+                        Double numVal = Double.parseDouble(value);
+                        numVal = numVal * 0.621371;
+                        value = String.valueOf(numVal);
+                        newView.setText(value);
+                    } catch (Exception e){
+                        ErrorTextView.setText("This does not work sorry! Please enter an integer.");
                     }
-                    newView.setText(value);
                 }
             });
         }
@@ -94,14 +95,15 @@ public class Converter extends AppCompatActivity {
             converterBtn.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    String value = newInput.getText().toString();
-                    Double numVal = Double.parseDouble(value);
-                    numVal = numVal * 1.60934;
-                    value = String.valueOf(numVal);
-                    if (newInput.getText().toString() == "") {
-                        ErrorTextView.setText("Please enter a value!");
+                    try {
+                        String value = newInput.getText().toString();
+                        Double numVal = Double.parseDouble(value);
+                        numVal = numVal * 1.60934;
+                        value = String.valueOf(numVal);
+                        newView.setText(value);
+                    } catch (Exception e){
+                        ErrorTextView.setText("This does not work sorry! Please enter an integer.");
                     }
-                    newView.setText(value);
                 }
             });
         }
@@ -113,14 +115,15 @@ public class Converter extends AppCompatActivity {
             converterBtn.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     // Do something in response to button click
-                    String value = newInput.getText().toString();
-                    Double numVal = Double.parseDouble(value);
-                    numVal = ((numVal - 32) * 5)/9;
-                    value = String.valueOf(numVal);
-                    if (newInput.getText().toString() == "") {
-                        ErrorTextView.setText("Please enter a value!");
+                    try {
+                        String value = newInput.getText().toString();
+                        Double numVal = Double.parseDouble(value);
+                        numVal = ((numVal - 32) * 5) / 9;
+                        value = String.valueOf(numVal);
+                        newView.setText(value);
+                    } catch (Exception e){
+                        ErrorTextView.setText("This does not work sorry! Please enter an integer.");
                     }
-                    newView.setText(value);
                 }
             });
         }

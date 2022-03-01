@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        problem = (TextView) findViewById(R.id.ohno);
-        send = (Button) findViewById(R.id.button);
-        radioGroupChoice = (RadioGroup) findViewById(R.id.radioGroup);
+        problem = findViewById(R.id.ohno);
+        send = findViewById(R.id.button);
+        radioGroupChoice = findViewById(R.id.radioGroup);
         i = new Intent(MainActivity.this,Converter.class);
 
         radioGroupChoice.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
